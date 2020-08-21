@@ -1,0 +1,14 @@
+{
+    "name": "lederluis/mp-ecommerce-php",
+    "description": "mercadopago",
+    "keywords": ["modal", "mercadopago"],
+    "authors": [
+        {
+            "name": "Luis Acuña",
+            "email": "leaderluis20@gmail.com"
+        }
+    ],
+    "require": {
+        "mercadopago/dx-php": "2.0.0"
+    }
+}
