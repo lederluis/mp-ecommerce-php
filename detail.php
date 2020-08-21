@@ -130,7 +130,7 @@
                                             Precio: <?php echo "$" . $_POST['price'] ?>
                                         </h3>
                                     </div>
-                                    <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                                    <?include __DIR__ . "/mpago.php";?>
                                 </div>
                             </div>
                         </div>
