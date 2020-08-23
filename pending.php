@@ -90,7 +90,6 @@
                           <p>El usuario haya decidido pagar con un medio de pago offline (ticket) y el pago quede en un estado “pending” o “in_process”</p>
                           <p>
                           Información de pago<br>
-                          <strong>payment_method_id:</strong> <?=$_REQUEST["payment_method_id"]?><br>
                           <strong>external_reference:</strong> <?=$_REQUEST["external_reference"]?><br>
                           <strong>payment_id o collection_id:</strong> <?=($_REQUEST["collection_id"]!="") ? $_REQUEST["collection_id"] : $_REQUEST["payment_id"]?><br>
                           </p>
