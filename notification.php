@@ -6,10 +6,12 @@ header("HTTP/1.1 200 OK");
 
 // $json = file_get_contents("https://api.mercadopago.com/v1/payments/$payment?access_token=$key");
 $notifications = file_get_contents("php://input");
-$file = __DIR__ . "/responses/test.json";
+$file = __DIR__ . "/responses/test.txt";
 
-$fh = fopen($file, 'w');
-fwrite($fh, $notifications);
-fclose($fh);
+$actual = file_get_contents($file);
+$actual .= "$notifications \n";
+
+file_put_contents($file, $actual);
+
 
 ?>  
